@@ -1,0 +1,47 @@
+$color: white;
+%message {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+    
+}
+
+.experience {
+    @extend %message;
+        text-align: center;
+        color: black;
+}
+
+.projects {
+    @extend %message;
+        text-align: center;
+        color: $color;
+}
+
+.training {
+    @extend %message;
+        text-align: center;
+        color: $color;
+}
+
+.contact_down  {
+   background-image: url(lagmap.jpg);
+   text-align: center;
+   color: teal;
+   padding: 40px;
+    height: 350px;
+}   
+
+.exnesting {
+    
+
+
+    h4 {
+        color: teal;
+    }
+
+    h5 {
+        color: rgba(0, 128, 128, 0.945);
+    }
+}

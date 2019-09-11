@@ -1,0 +1,37 @@
+.experience, .projects, .training {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.experience {
+  text-align: center;
+  color: black;
+}
+
+.projects {
+  text-align: center;
+  color: white;
+}
+
+.training {
+  text-align: center;
+  color: white;
+}
+
+.contact_down {
+  background-image: url(lagmap.jpg);
+  text-align: center;
+  color: teal;
+  padding: 40px;
+  height: 350px;
+}
+
+.exnesting h4 {
+  color: teal;
+}
+
+.exnesting h5 {
+  color: rgba(0, 128, 128, 0.945);
+}
+/*# sourceMappingURL=variables.css.map */
