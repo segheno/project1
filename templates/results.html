@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+
+<h3>Search Results</h3>
+<div class="dropdown-divider"></div>
+
+<div class="container results-container">
+    
+    {% for book in books %}
+          <div class="row">            
+              <div class="col-sm-12">
+               <div class="card"></div>  
+                <div class="card-body">
+                      <img class="mb-4" id="cs50" src="../static/book_cover.jpg" align="left" hspace="15" vspace="10" alt="cs50" width="99" height="147" style="box-shadow: 3px 3px 2px #ccc">
+                      <h5 class="card-title">Title: {{book['title']}}</h5>
+                      <p class="card-text">Author: {{book['author']}}</p>
+                      <p class="card-text">Publication Year: {{book['year']}}</p>
+                      <p class="card-text">ISBN No: {{book['isbn']}}</></p>
+                      <a href="/book/{{book['isbn']}}" class="btn btn-light">Check out the book</a>
+                  </div>
+               </div>
+              </div>            
+          </div>
+    {% endfor %}
+</div>
+{% endblock %}
